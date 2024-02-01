@@ -8,7 +8,7 @@ export default {
     <footer>
         <div class="footer-top">
             <div class="container">
-                <p>lista e logo</p>
+                <p>lista e immagine</p>
             </div>
         </div>
         <div class="footer-bottom">
@@ -26,6 +26,7 @@ export default {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 
 .footer-bottom {
     height: 65px;

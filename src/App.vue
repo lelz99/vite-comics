@@ -26,12 +26,21 @@ export default {
   box-sizing: border-box;
 }
 
-.border {
-  border: 1px dashed black;
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .container {
-  max-width: 920px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 </style>
