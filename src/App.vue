@@ -2,14 +2,26 @@
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
+import {
+  films,
+  headerLinks,
+  infoLinks,
+  otherSitesLinks,
+  social,
+  infoMain
+} from './assets/data';
 
 export default {
   name: 'MyApp',
-  components: {
-    AppHeader,
-    AppMain,
-    AppFooter,
-  }
+  components: { AppHeader, AppMain, AppFooter },
+  data: () => ({
+    films,
+    headerLinks,
+    infoLinks,
+    otherSitesLinks,
+    social,
+    infoMain
+  })
 }
 </script>
 
