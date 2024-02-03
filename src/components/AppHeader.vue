@@ -2,6 +2,7 @@
 export default {
     name: 'AppHeader',
     data: () => ({}),
+    props: ['headerLinks']
 }
 </script>
 
@@ -12,7 +13,7 @@ export default {
                 <img src="../assets/img/dc-logo.png" alt="">
             </figure>
             <ul>
-                <li v-for="link in linksList"><a href="#">{{ link.text }}</a></li>
+                <li v-for="link in headerLinks"><a href="#">{{ link.text }}</a></li>
             </ul>
         </nav>
     </header>
