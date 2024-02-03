@@ -23,13 +23,13 @@ export default {
     otherSitesLinks,
     socials,
     infoMain,
-  })
+  }),
 }
 </script>
 
 <template>
   <AppHeader :headerLinks="headerLinks" />
-  <AppMain />
+  <AppMain :infoMain="infoMain" />
   <FooterTop :otherSitesLinks="otherSitesLinks" :listLinks="headerLinks" :infoLinks="infoLinks" />
   <FooterBottom :socials="socials" />
 </template>

@@ -44,7 +44,7 @@ export default {
     </footer>
 </template>
 
-<style>
+<style lang="scss">
 .footer-top {
     background-image: url(../assets/img/footer-bg.jpg);
     background-size: cover;

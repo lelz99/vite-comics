@@ -33,7 +33,7 @@ export default {
     </footer>
 </template>
 
-<style>
+<style lang="scss">
 .footer-bottom {
     background-color: #303030;
 
