@@ -1,7 +1,7 @@
 <script>
 export default {
     name: 'AppMain',
-    props: ['infoMain'],
+    props: ['infoMain', 'films'],
     methods: {
         createImagePath(img) {
             const url = new URL(`../assets/img/${img}`, import.meta.url);
@@ -13,6 +13,16 @@ export default {
 
 <template>
     <section id="films">
+        <div class="container">
+            <div class="row">
+                <div v-for="film in films" class="col">
+                    <div class="card">
+                        <img :src="film.thumb" alt="">
+                        <h4>{{ film.series }}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="infoMain">
         <ul>
@@ -29,7 +39,35 @@ export default {
 <style lang="scss" scoped>
 #films {
     background-color: #1c1c1c;
+    padding: 20px;
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 -10px;
+    }
+
+    .col {
+        flex-basis: calc(100% / 6);
+        padding: 10px;
+
+        .card {
+
+            img {
+                display: block;
+                max-width: 100%;
+            }
+
+            h4 {
+                color: white;
+                text-align: center;
+                margin-top: 5px;
+            }
+        }
+    }
 }
+
 
 #infoMain {
     background-color: #0282f9;

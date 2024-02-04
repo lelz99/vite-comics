@@ -29,7 +29,7 @@ export default {
 
 <template>
   <AppHeader :headerLinks="headerLinks" />
-  <AppMain :infoMain="infoMain" />
+  <AppMain :infoMain="infoMain" :films="films" />
   <FooterTop :otherSitesLinks="otherSitesLinks" :listLinks="headerLinks" :infoLinks="infoLinks" />
   <FooterBottom :socials="socials" />
 </template>
